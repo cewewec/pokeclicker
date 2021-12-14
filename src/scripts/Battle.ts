@@ -53,7 +53,7 @@ class Battle {
         // TODO: figure out a better way of handling this
         // Limit click attack speed, Only allow 1 attack per 50ms (20 per second)
         const now = Date.now();
-        if (this.lastClickAttack > now - 50) {
+        if (this.lastClickAttack > now - 1) {
             return;
         }
         this.lastClickAttack = now;
